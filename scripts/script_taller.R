@@ -8,7 +8,6 @@
 # 
 # remotes::install_github("cienciadedatos/datos")
 
-
 # Cargamos las librerías --------------------------------------------------
 
 library(tidyverse) # base para analisis de datos
