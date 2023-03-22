@@ -10,6 +10,7 @@ from: markdown+emoji
 embed-resources: true
 ---
 
+
 # Hola!
 
 {{< fa brands twitter size=1.4xl >}} [saryace](https://github.com/Saryace) | {{< fa brands github size=1.4xl >}} [Saryace](https://twitter.com/saryace) | {{< fa globe size=1.4xl >}} [saryace.github.io](saryace.github.io)
@@ -64,11 +65,13 @@ El megapaquete (o framework) **tidymodels** contiene un set de paquetes para la 
 
 Las presentaciones contienen código real (se puede copiar y pegar directamente). El repositorio contendrá el material y contenido del taller
 
+
 ```{r}
 #| eval: false
 #| echo: true
 1 + 1 # copia y pega en la consola
 ```
+
 ::: info-box
 
 El repositorio lo puedes encontrar acá:
@@ -101,6 +104,7 @@ El repositorio lo puedes encontrar acá:
 
 ## Estilo Tidyverse
 
+
 ```{r}
 #| eval: false
 #| echo: true
@@ -110,6 +114,7 @@ hornear() %>%
 decorar() %>% 
 cortar()
 ```
+
 
 ::: box
 
@@ -123,6 +128,7 @@ Tanto **tidymodels** como **tidyverse** comparten este estilo
 
 Copiar y pegar en la consola el siguiente chunk de código
 
+
 ```{r install}
 #| eval: false
 #| echo: true
@@ -131,6 +137,7 @@ install.packages(c("tidymodels",
                    "workflows",
                    "workflowsets"))
 ```
+
 
 ## Antes de comenzar: créditos y más información
 
@@ -143,6 +150,7 @@ install.packages(c("tidymodels",
 
 Tamaño de pingüinos adultos en busca de comida cerca de la estación Palmer en la Antártica
 
+
 ```{r}
 
 library(tidyverse)
@@ -154,6 +162,7 @@ library(workflowsets)
 pinguinos <- datos::pinguinos
 pinguinos
 ```
+
 
 ## Un problema 
 
@@ -196,12 +205,15 @@ pinguinos
 
 Por tiempo, no lo veremos en profundidad, pero conocer sobre los datos nos ayuda a crear mejores modelos
 
+
 ```{r}
 #| echo: true
 dplyr::glimpse(pinguinos)
 ```
 
+
 ## Análisis exploratorio de datos
+
 
 ```{r}
 #| echo: true
@@ -221,9 +233,11 @@ pinguinos %>%
   theme_bw()
 ```
 
+
 ## Creación de un conjunto de entrenamiento y prueba
 
 El paquete `rsample` posee funciones para crear los sets de entrenamiento y testeo
+
 
 ```{r}
 #| echo: true
@@ -236,9 +250,11 @@ pinguinos_entrenamiento <- rsample::training(pinguinos_division)
 pinguinos_testeo  <-  rsample::testing(pinguinos_division)
 ```
 
+
 ## Creación de un conjunto de entrenamiento y prueba
 
 El paquete `rsample` posee funciones para crear los sets de **entrenamiento** y testeo
+
 
 ```{r}
 #| echo: true
@@ -247,9 +263,11 @@ dplyr::glimpse(pinguinos_entrenamiento)
 
 ```
 
+
 ## Creación de un conjunto de entrenamiento y prueba
 
 El paquete `rsample` posee funciones para crear los sets de entrenamiento y **testeo**
+
 
 ```{r}
 #| echo: true
@@ -257,6 +275,7 @@ El paquete `rsample` posee funciones para crear los sets de entrenamiento y **te
 dplyr::glimpse(pinguinos_testeo)
 
 ```
+
 
 ## Decidir si y cómo preprocesar los datos para que sean apropiados para la modelación
 
@@ -269,6 +288,7 @@ Depende de los datos y de los tipos de modelos. Pero el paquete `recipes` tiene 
 ## Decidir si y cómo preprocesar los datos para que sean apropiados para la modelación
 
 ![](img/preprocessing.png){fig-align="center"}
+
 ---
 
 ## Decidir si y cómo preprocesar los datos para que sean apropiados para la modelación
@@ -618,4 +638,5 @@ last_fit_glm %>%
 # Muchas gracias por su atención :heart:
 
 {{< fa brands twitter size=1.4xl >}} [saryace](https://github.com/Saryace) | {{< fa brands github size=1.4xl >}} [Saryace](https://twitter.com/saryace) | {{< fa globe size=1.4xl >}} [saryace.github.io](saryace.github.io)
+
 
