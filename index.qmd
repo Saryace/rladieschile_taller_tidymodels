@@ -90,7 +90,6 @@ El repositorio lo puedes encontrar acá:
 * Utilizar el operador `pipe %>% ` para combinar funciones
 * Pensado para "humanos"
 
-
 ## Ejemplo: un pedazo de torta a partir de ingredientes
 
 ::: {.incremental}
