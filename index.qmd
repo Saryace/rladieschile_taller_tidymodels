@@ -2,12 +2,12 @@
 title: "Taller Tidymodels"
 subtitle: "R-Ladies Chile\n(Valparaíso + Santiago + Talca + Concepción)"
 author: "[Sara Acevedo](https://twitter.com/saryace)"
-format: 
-  rladies-revealjs:
-    footer: "[R-Ladies](https://rladies.org/) tema para [Quarto Presentations](https://quarto.org/docs/presentations/revealjs/index.html). Autora [Bea Milz](https://twitter.com/BeaMilz) Código disponible en [GitHub](https://github.com/beatrizmilz/quarto-rladies-theme)."
 project:
   type: website
   output-dir: docs
+format: 
+  rladies-revealjs:
+    footer: "[R-Ladies](https://rladies.org/) tema para [Quarto Presentations](https://quarto.org/docs/presentations/revealjs/index.html). Autora [Bea Milz](https://twitter.com/BeaMilz) Código disponible en [GitHub](https://github.com/beatrizmilz/quarto-rladies-theme)."
 from: markdown+emoji
 embed-resources: true
 ---
